@@ -34,34 +34,33 @@ namespace SimpleCharacterDemo
 		{
 			Vector2 velocity = Velocity;
 			HandleGravity(ref velocity, delta);
-			velocity = HandleJump(velocity);
-			velocity = HandleHorizontalMovement(velocity);
+			HandleJump(ref velocity);
+			HandleHorizontalMovement(ref velocity);
 			return velocity;
 		}
 
-		private Vector2 HandleHorizontalMovement(Vector2 velocity)
+		private void HandleHorizontalMovement(ref Vector2 velocity)
 		{
 			Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
 			if (direction != Vector2.Zero)
 			{
-				velocity = HandleAcceleration(velocity, direction);
+				HandleAcceleration(ref velocity, direction);
 			}
 			else
 			{
-				velocity = HandleFriction(velocity);
+				HandleFriction(ref velocity);
 			}
-			return velocity;
 		}
 
-		private void  HandleGravity(ref Vector2 velocity, double delta)
+		private void HandleGravity(ref Vector2 velocity, double delta)
 		{
-			if (IsOnFloor())
+			if (!IsOnFloor())
 			{
 				velocity += GetGravity() * (float)delta * MovementData.GravityScale;
 			}
 		}
 
-		private Vector2 HandleJump(Vector2 velocity)
+		private void HandleJump(ref Vector2 velocity)
 		{
 			if (Input.IsActionJustPressed("ui_accept"))
 			{
@@ -70,9 +69,8 @@ namespace SimpleCharacterDemo
 					var p = Position;
 					p.Y += 1;
 					Position = p;
-					return velocity;
+					return;
 				}
-
 
 				if (IsOnFloor() || !_coyoteJumpTimer.IsStopped())
 				{
@@ -85,22 +83,18 @@ namespace SimpleCharacterDemo
 					velocity.X = GetWallNormal().X * MovementData.WallJumpPower;
 				}
 			}
-
-			return velocity;
 		}
 
-		private Vector2 HandleAcceleration(Vector2 velocity, Vector2 direction)
+		private void HandleAcceleration(ref Vector2 velocity, Vector2 direction)
 		{
 			var acceleration = IsOnFloor() ? MovementData.Acceleration : MovementData.AirAcceleration;
 			velocity.X = Mathf.MoveToward(velocity.X, MovementData.Speed * direction.X, acceleration);
-			return velocity;
 		}
 
-		private Vector2 HandleFriction(Vector2 velocity)
+		private void HandleFriction(ref Vector2 velocity)
 		{
 			var friction = IsOnFloor() ? MovementData.Friction : MovementData.AirResistance;
 			velocity.X = Mathf.MoveToward(velocity.X, 0, friction);
-			return velocity;
 		}
 
 		private void SetAnimation()
