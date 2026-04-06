@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Godot\\Projects\\simple-character-demo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\ledgegrabraycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:ledgegrabraycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\playermovementdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:playermovementdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LedgeGrabRaycast.cs",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\LedgeGrabRaycast.cs",
+              "RelativeDocumentMoniker": "LedgeGrabRaycast.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\LedgeGrabRaycast.cs",
+              "RelativeToolTip": "LedgeGrabRaycast.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T19:59:35.195Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,19 +45,20 @@
               "RelativeDocumentMoniker": "PlayerMovementData.cs",
               "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\PlayerMovementData.cs",
               "RelativeToolTip": "PlayerMovementData.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAywBMAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvxMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T23:18:05.578Z"
+              "WhenOpened": "2026-04-05T23:18:05.578Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Player.cs*",
-              "RelativeToolTip": "Player.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwGAAAAA6AAAAAAAAAA==",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAkwJ0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-04T22:03:07.292Z",
               "EditorCaption": ""

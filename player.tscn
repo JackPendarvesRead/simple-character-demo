@@ -5,9 +5,18 @@
 [ext_resource type="Texture2D" uid="uid://cka3qxjkreebf" path="res://Sprites/Player/Idle.png" id="2_sweqy"]
 [ext_resource type="Texture2D" uid="uid://cvkw031ob5cmk" path="res://Sprites/Player/Walk1.png" id="3_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://bpx72v8c8dlep" path="res://Sprites/Player/Walk2.png" id="4_1jxqw"]
+[ext_resource type="Texture2D" uid="uid://y1q7hcuqe5yw" path="res://Sprites/Player/LedgeGrab.png" id="5_2hs0m"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dw050"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_2hs0m")
+}],
+"loop": true,
+"name": &"grab",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_hqtel")
@@ -46,16 +55,26 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b26j0"]
-size = Vector2(13, 16)
+size = Vector2(11, 16)
 
 [node name="player" type="CharacterBody2D" unique_id=1654882900]
 script = ExtResource("1_sweqy")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2075010367]
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=2075010367]
 sprite_frames = SubResource("SpriteFrames_dw050")
-animation = &"jump"
+animation = &"grab"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=552348040]
+[node name="LedgeGrabRayCast" type="RayCast2D" parent="." unique_id=1612006582]
+position = Vector2(0, -2.65)
+rotation = 1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="GrabHandRayCast" type="RayCast2D" parent="." unique_id=1790162081]
+position = Vector2(0, -4.755)
+rotation = 1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="HitboxCollisionShape" type="CollisionShape2D" parent="." unique_id=552348040]
 position = Vector2(0.5, 4)
 shape = SubResource("RectangleShape2D_b26j0")
 
