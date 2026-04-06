@@ -1,4 +1,5 @@
 using Godot;
+using SimpleCharacterDemo.Constants;
 
 namespace SimpleCharacterDemo
 {
@@ -15,9 +16,9 @@ namespace SimpleCharacterDemo
 
 		public override void _Ready()
 		{
-			_coyoteJumpTimer = GetNode<Timer>("CoyoteJumpTimer");
-			_ledgeGrabRayCast = GetNode<RayCast2D>("LedgeGrabRayCast");
-			_grabHandRayCast = GetNode<RayCast2D>("GrabHandRayCast");
+			_coyoteJumpTimer = GetNode<Timer>(PlayerNodeNames.CoyoteJumpTimer);
+			_ledgeGrabRayCast = GetNode<RayCast2D>(PlayerNodeNames.LedgeGrabRayCast);
+			_grabHandRayCast = GetNode<RayCast2D>(PlayerNodeNames.GrabHandRayCast);
 		}
 
 		public override void _PhysicsProcess(double delta)
@@ -70,10 +71,10 @@ namespace SimpleCharacterDemo
 
 		private void HandleHorizontalMovement(ref Vector2 velocity)
 		{
-			Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
-			if (direction != Vector2.Zero)
+			var horizontalAxis = Input.GetAxis(PlayerActionNames.MoveLeft, PlayerActionNames.MoveRight);
+			if (horizontalAxis != 0)
 			{
-				HandleAcceleration(ref velocity, direction);
+				HandleAcceleration(ref velocity, horizontalAxis);
 			}
 			else
 			{
@@ -91,9 +92,9 @@ namespace SimpleCharacterDemo
 
 		private void HandleJump(ref Vector2 velocity)
 		{
-			if (Input.IsActionJustPressed("ui_accept"))
+			if (Input.IsActionJustPressed(PlayerActionNames.Jump))
 			{
-				if (Input.IsActionPressed("ui_down"))
+				if (Input.IsActionPressed(PlayerActionNames.Down))
 				{
 					var p = Position;
 					p.Y += 1;
@@ -114,10 +115,10 @@ namespace SimpleCharacterDemo
 			}
 		}
 
-		private void HandleAcceleration(ref Vector2 velocity, Vector2 direction)
+		private void HandleAcceleration(ref Vector2 velocity, float horizontalAxis)
 		{
 			var acceleration = IsOnFloor() ? MovementData.Acceleration : MovementData.AirAcceleration;
-			velocity.X = Mathf.MoveToward(velocity.X, MovementData.Speed * direction.X, acceleration);
+			velocity.X = Mathf.MoveToward(velocity.X, MovementData.Speed * horizontalAxis, acceleration);
 		}
 
 		private void HandleFriction(ref Vector2 velocity)
@@ -128,7 +129,7 @@ namespace SimpleCharacterDemo
 
 		private void HandleLedgeGrab(ref Vector2 velocity)
 		{
-			if (Input.IsActionJustPressed("ui_accept"))
+			if (Input.IsActionJustPressed(PlayerActionNames.Jump))
 			{
 				velocity.Y = MovementData.JumpVelocity;
 				velocity.X = GetWallNormal().X * MovementData.WallJumpPower;
@@ -144,7 +145,6 @@ namespace SimpleCharacterDemo
 
 			if (canGrab)
 			{
-				GD.Print($"Grabbing ledge. IsOnFloor={IsOnFloor()}");
 				_isGrabbingLedge = true;
 				velocity = Vector2.Zero;
 			}
@@ -152,11 +152,11 @@ namespace SimpleCharacterDemo
 
 		private void SetAnimation()
 		{
-			AnimatedSprite2D animatedSprite = GetNode<AnimatedSprite2D>("Sprite");
+			AnimatedSprite2D animatedSprite = GetNode<AnimatedSprite2D>(PlayerNodeNames.AnimatedSprite);
 
 			if (_isGrabbingLedge || IsOnWallOnly())
 			{
-				animatedSprite.Play("grab");
+				animatedSprite.Play(PlayerAnimationNames.Grab);
 				animatedSprite.FlipH = GetWallNormal().X < 0;
 				return;
 			}
@@ -168,15 +168,15 @@ namespace SimpleCharacterDemo
 
 			if (!IsOnFloor())
 			{
-				animatedSprite.Play("jump");
+				animatedSprite.Play(PlayerAnimationNames.Jump);
 			}
 			else if (Velocity.X == 0 && IsOnFloor())
 			{
-				animatedSprite.Play("idle");
+				animatedSprite.Play(PlayerAnimationNames.Idle);
 			}
 			else
 			{
-				animatedSprite.Play("walk");
+				animatedSprite.Play(PlayerAnimationNames.Walk);
 			}
 		}
 	}
