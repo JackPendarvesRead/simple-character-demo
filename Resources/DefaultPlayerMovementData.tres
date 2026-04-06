@@ -5,4 +5,5 @@
 [resource]
 script = ExtResource("1_pakaw")
 JumpVelocity = -350.0
+WallFriction = 15.0
 metadata/_custom_type_script = "uid://dqplfbu08r2om"

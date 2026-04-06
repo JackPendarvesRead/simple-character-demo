@@ -87,6 +87,11 @@ namespace SimpleCharacterDemo
 			if (!IsOnFloor())
 			{
 				velocity += GetGravity() * (float)delta * MovementData.GravityScale;
+
+				if (IsOnWall() && velocity.Y > 0)
+				{
+					velocity.Y = Mathf.MoveToward(velocity.Y, 0, MovementData.WallFriction);
+				}
 			}
 		}
 

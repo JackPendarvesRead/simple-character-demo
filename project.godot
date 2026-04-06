@@ -67,4 +67,4 @@ player_down={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-environment/defaults/default_clear_color=Color(0.97837883, 0.35734072, 0.73472613, 1)
+environment/defaults/default_clear_color=Color(0.6983992, 0.6555212, 0.9992803, 1)

@@ -29,6 +29,9 @@ namespace SimpleCharacterDemo
         public float WallJumpPower = 200.0f;
 
         [Export]
+        public float WallFriction = 12.0f;
+
+        [Export]
         public float AirResistance = 10.0f;
 
         [Export]
