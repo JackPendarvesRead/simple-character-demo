@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Godot\\Projects\\simple-character-demo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\constants\\playernodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:constants\\playernodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\playermovementdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:playermovementdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\constants\\playeractionnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:constants\\playeractionnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,25 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerNodeNames.cs",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\PlayerNodeNames.cs",
+              "RelativeDocumentMoniker": "Constants\\PlayerNodeNames.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\PlayerNodeNames.cs",
+              "RelativeToolTip": "Constants\\PlayerNodeNames.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T21:31:42.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerActionNames.cs",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\PlayerActionNames.cs",
+              "RelativeDocumentMoniker": "Constants\\PlayerActionNames.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\PlayerActionNames.cs",
+              "RelativeToolTip": "Constants\\PlayerActionNames.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T21:24:45.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAADwv2AAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T20:42:00.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerMovementData.cs",
               "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\PlayerMovementData.cs",
               "RelativeDocumentMoniker": "PlayerMovementData.cs",
               "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\PlayerMovementData.cs",
               "RelativeToolTip": "PlayerMovementData.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T20:41:23.625Z",
               "EditorCaption": ""

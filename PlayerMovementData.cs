@@ -36,5 +36,8 @@ namespace SimpleCharacterDemo
 
         [Export]
         public float AirAcceleration = 10.0f;
+
+        [Export]
+        public float GrapplePower = 400.0f;
     }
 }

@@ -84,3 +84,22 @@ position = Vector2(0, -30)
 [node name="CoyoteJumpTimer" type="Timer" parent="." unique_id=2107370956]
 wait_time = 0.1
 one_shot = true
+
+[node name="GrappleTimer" type="Timer" parent="." unique_id=1298839308]
+wait_time = 0.2
+one_shot = true
+
+[node name="GrappleRayCast" type="RayCast2D" parent="." unique_id=133758374]
+rotation = -1.5707964
+scale = Vector2(1.93, 1.93)
+
+[node name="Rope" type="Line2D" parent="GrappleRayCast" unique_id=384098154]
+scale = Vector2(0.41, 1)
+points = PackedVector2Array(0, 0, 0, 49)
+width = 1.75
+default_color = Color(0.45882353, 0.28627452, 0.25882354, 1)
+
+[node name="AimCursor" type="Polygon2D" parent="GrappleRayCast" unique_id=259759777]
+position = Vector2(-6.7357535, 34.196896)
+color = Color(0.91174704, 0.0004655447, 0.03149118, 1)
+polygon = PackedVector2Array(7.7720213, 14.507773, 6.7357516, 15.544044, 5.699482, 14.507773, 6.735752, 13.4715)

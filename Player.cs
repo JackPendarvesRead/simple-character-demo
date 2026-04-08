@@ -9,16 +9,47 @@ namespace SimpleCharacterDemo
 		public PlayerMovementData MovementData;
 
 		private Timer _coyoteJumpTimer;
+		private Timer _grappleTimer;
 		private RayCast2D _ledgeGrabRayCast;
 		private RayCast2D _grabHandRayCast;
+		private RayCast2D _grappleRayCast;
+		private Line2D _grappleRope;
+		private Polygon2D _aimCursor;
 		private bool _isGrabbingLedge;
 		private bool _isMovingRight;
+		private bool _isGrappling;
+
+		// DEBUG
+		private bool wasGrabbing = false;
+		private bool wasGrappling = false;
 
 		public override void _Ready()
 		{
 			_coyoteJumpTimer = GetNode<Timer>(PlayerNodeNames.CoyoteJumpTimer);
+			_grappleTimer = GetNode<Timer>(PlayerNodeNames.GrappleTimer);
 			_ledgeGrabRayCast = GetNode<RayCast2D>(PlayerNodeNames.LedgeGrabRayCast);
 			_grabHandRayCast = GetNode<RayCast2D>(PlayerNodeNames.GrabHandRayCast);
+			_grappleRayCast = GetNode<RayCast2D>(PlayerNodeNames.GrappleRayCast);
+			_grappleRope = GetNode<Line2D>(PlayerNodeNames.GrappleRope);
+			_aimCursor = GetNode<Polygon2D>(PlayerNodeNames.AimCursor);
+		}
+
+		public override void _Process(double delta)
+		{
+			_grappleRope.Visible = !_grappleTimer.IsStopped();
+			_aimCursor.Visible = IsAiming();
+
+			if(_isGrappling != wasGrappling)
+			{
+				GD.Print($"Grappling state changed: {_isGrappling}");
+				wasGrappling = _isGrappling;
+			}
+
+			if(_isGrabbingLedge != wasGrabbing)
+			{
+				GD.Print($"Grabbing state changed: {_isGrabbingLedge}");
+				wasGrabbing = _isGrabbingLedge;
+			}
 		}
 
 		public override void _PhysicsProcess(double delta)
@@ -31,15 +62,48 @@ namespace SimpleCharacterDemo
 
 			base.MoveAndSlide();
 
-			if(currentOnFloor && !IsOnFloor())
+			if (currentOnFloor && !IsOnFloor())
 			{
 				_coyoteJumpTimer.Start();
 			}
 		}
 
+		private void HandleGrapple(ref Vector2 velocity)
+		{
+			if (_isGrappling)
+			{
+				if(_grappleTimer.IsStopped() 
+					&& (IsOnCeiling() || IsOnWall() || IsOnFloor()))
+				{
+					_isGrappling = false;
+				}
+
+				return;
+			}
+
+			var aim = GetAimVector();
+			if (aim != Vector2.Zero)
+			{
+				_grappleRayCast.Rotation = aim.Angle() - Mathf.Pi / 2;
+				_grappleRayCast.ForceRaycastUpdate();
+
+				if (Input.IsActionPressed(PlayerActionNames.Grapple))
+				{
+					if (_grappleRayCast.IsColliding())
+					{
+						_isGrappling = true;
+						var grapplePoint = _grappleRayCast.GetCollisionPoint();
+						var direction = (grapplePoint - Position).Normalized();
+						velocity = direction * MovementData.GrapplePower;
+						_grappleTimer.Start();
+					}
+				}
+			}
+		}
+
 		private void UpdateDirection(Vector2 velocity)
 		{
-			if(velocity.X == 0)
+			if (velocity.X == 0)
 			{
 				return;
 			}
@@ -54,7 +118,14 @@ namespace SimpleCharacterDemo
 		private Vector2 GetUpdatedVelocity(double delta)
 		{
 			Vector2 velocity = Velocity;
+			HandleGrapple(ref velocity);
 			CheckLedgeGrab(ref velocity);
+
+			if (!_grappleTimer.IsStopped())
+			{
+				return velocity;
+			}
+
 			if (_isGrabbingLedge)
 			{
 				HandleLedgeGrab(ref velocity);
@@ -65,7 +136,7 @@ namespace SimpleCharacterDemo
 				HandleJump(ref velocity);
 				HandleHorizontalMovement(ref velocity);
 			}
-			
+
 			return velocity;
 		}
 
@@ -153,6 +224,10 @@ namespace SimpleCharacterDemo
 				_isGrabbingLedge = true;
 				velocity = Vector2.Zero;
 			}
+			else if(_isGrabbingLedge && !IsOnWall())
+			{
+				_isGrabbingLedge = false;
+			}
 		}
 
 		private void SetAnimation()
@@ -184,5 +259,13 @@ namespace SimpleCharacterDemo
 				animatedSprite.Play(PlayerAnimationNames.Walk);
 			}
 		}
-	}
+
+		private Vector2 GetAimVector() => Input.GetVector(
+					PlayerActionNames.AimLeft,
+					PlayerActionNames.AimRight,
+					PlayerActionNames.AimUp,
+					PlayerActionNames.AimDown);
+
+		private bool IsAiming() => GetAimVector() != Vector2.Zero;
+	}    
 }
