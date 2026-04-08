@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://drqbb5i77yvvn"]
+
+[ext_resource type="Script" uid="uid://bnet8vdndggbv" path="res://Grapple.cs" id="1_cofiy"]
+
+[node name="Grapple" type="Node2D" unique_id=889256872]
+script = ExtResource("1_cofiy")
+
+[node name="GrappleRayCast" type="RayCast2D" parent="." unique_id=106973573]
+rotation = -1.5707964
+scale = Vector2(1.93, 1.93)
+
+[node name="Rope" type="Line2D" parent="." unique_id=1319288036]
+rotation = -1.5707964
+scale = Vector2(0.7913, 1.93)
+points = PackedVector2Array(0, 0, 0, 49)
+width = 1.75
+default_color = Color(0.45882353, 0.28627452, 0.25882354, 1)
+
+[node name="AimCursor" type="Polygon2D" parent="." unique_id=589351932]
+position = Vector2(66.00001, 13.000001)
+rotation = -1.5707964
+scale = Vector2(1.93, 1.93)
+color = Color(0.91174704, 0.0004655447, 0.03149118, 1)
+polygon = PackedVector2Array(7.7720213, 14.507773, 6.7357516, 15.544044, 5.699482, 14.507773, 6.735752, 13.4715)
+
+[node name="GrappleTimer" type="Timer" parent="." unique_id=1558716058]
+wait_time = 0.2
+one_shot = true

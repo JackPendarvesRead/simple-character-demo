@@ -5,6 +5,7 @@ namespace SimpleCharacterDemo.Constants
         public const string MoveRight = "player_move_right";
         public const string MoveLeft = "player_move_left";
         public const string Jump = "player_jump";
+        public const string Up = "player_up";
         public const string Down = "player_down";
         public const string AimUp = "player_aim_up";
         public const string AimDown = "player_aim_down";

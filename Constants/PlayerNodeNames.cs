@@ -4,16 +4,15 @@ namespace SimpleCharacterDemo.Constants
     {
         // Timers
         public const string CoyoteJumpTimer = "CoyoteJumpTimer";
-        public const string GrappleTimer = "GrappleTimer";
-        
+
+        // Abilities
+        public const string Grapple = "Grapple";
+
         // Raycasts
         public const string LedgeGrabRayCast = "LedgeGrabRayCast";
         public const string GrabHandRayCast = "GrabHandRayCast";
-        public const string GrappleRayCast = "GrappleRayCast";
         
         // Other
         public const string AnimatedSprite = "Sprite";
-        public const string AimCursor = "GrappleRayCast/AimCursor";
-        public const string GrappleRope = "GrappleRayCast/Rope";
     }
 }
