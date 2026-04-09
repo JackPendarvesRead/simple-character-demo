@@ -20,7 +20,7 @@ namespace SimpleCharacterDemo
 		public float Friction = 30f;
 
 		[Export]
-		public float JumpVelocity = -400.0f;
+		public float JumpVelocity = -350.0f;
 
 		[Export]
 		public float GravityScale = 1.0f;

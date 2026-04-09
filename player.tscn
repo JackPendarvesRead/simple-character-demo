@@ -75,10 +75,8 @@ shape = SubResource("RectangleShape2D_b26j0")
 position = Vector2(0, -30)
 
 [node name="Grapple" parent="." unique_id=889256872 instance=ExtResource("7_1jxqw")]
-GrapplePower = null
 
 [node name="LedgeGrab" parent="." unique_id=1980809726 instance=ExtResource("8_dw050")]
-GrabDistance = null
 
 [node name="CoyoteJumpTimer" type="Timer" parent="." unique_id=2107370956]
 wait_time = 0.1

@@ -50,8 +50,6 @@ namespace SimpleCharacterDemo.Abilities
 			if (aim != Vector2.Zero)
 			{
 				Rotation = aim.Angle();
-				//_grappleRayCast.Rotation = aim.Angle() - Mathf.Pi / 2;
-				//_grappleRayCast.ForceRaycastUpdate();
 
 				if (Input.IsActionJustPressed(PlayerActionNames.Grapple))
 				{
