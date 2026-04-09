@@ -444,3 +444,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+/.vs/SimpleCharacterDemo/v17/.suo
+/.vs/SimpleCharacterDemo/v17/DocumentLayout.backup.json
+/.vs/SimpleCharacterDemo/v17/DocumentLayout.json
