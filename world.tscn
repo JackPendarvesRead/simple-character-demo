@@ -7,7 +7,7 @@
 [node name="World" type="Node2D" unique_id=1721257925]
 
 [node name="CharacterBody2D" parent="." unique_id=1654882900 instance=ExtResource("1_f3sb7")]
-position = Vector2(33, 74)
+position = Vector2(-62, 92)
 MovementData = ExtResource("2_tlwt5")
 
 [node name="TileMapLayer" parent="." unique_id=725152215 instance=ExtResource("3_tlwt5")]

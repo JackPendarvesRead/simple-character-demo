@@ -7,11 +7,8 @@ namespace SimpleCharacterDemo.Constants
 
         // Abilities
         public const string Grapple = "Grapple";
+        public const string LedgeGrab = "LedgeGrab";
 
-        // Raycasts
-        public const string LedgeGrabRayCast = "LedgeGrabRayCast";
-        public const string GrabHandRayCast = "GrabHandRayCast";
-        
         // Other
         public const string AnimatedSprite = "Sprite";
     }

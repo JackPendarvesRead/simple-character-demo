@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleCharacterDemo
+namespace SimpleCharacterDemo.Abilities
 {
 	public partial class Grapple : Node2D
 	{

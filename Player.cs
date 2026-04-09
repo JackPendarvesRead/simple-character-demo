@@ -1,5 +1,7 @@
 using Godot;
+using SimpleCharacterDemo.Abilities;
 using SimpleCharacterDemo.Constants;
+using SimpleCharacterDemo.Helpers;
 
 namespace SimpleCharacterDemo
 {
@@ -9,34 +11,25 @@ namespace SimpleCharacterDemo
 		public PlayerMovementData MovementData;
 
 		private Grapple _grapple;
-
+		private LedgeGrab _ledgeGrab;
 		private Timer _coyoteJumpTimer;
-		private RayCast2D _ledgeGrabRayCast;
-		private RayCast2D _grabHandRayCast;
-		private bool _isGrabbingLedge;
-		private bool _isMovingRight;
-
-		// DEBUG
-		private bool wasGrabbing = false;
-		private bool wasGrappling = false;
 
 		public override void _Ready()
 		{
 			_grapple = GetNode<Grapple>(PlayerNodeNames.Grapple);
+			_ledgeGrab = GetNode<LedgeGrab>(PlayerNodeNames.LedgeGrab);
 			_coyoteJumpTimer = GetNode<Timer>(PlayerNodeNames.CoyoteJumpTimer);
-			_ledgeGrabRayCast = GetNode<RayCast2D>(PlayerNodeNames.LedgeGrabRayCast);
-			_grabHandRayCast = GetNode<RayCast2D>(PlayerNodeNames.GrabHandRayCast);
 		}
 
 		public override void _PhysicsProcess(double delta)
 		{
 			Velocity = GetUpdatedVelocity(delta);
-			UpdateDirection(Velocity);
+			
 			SetAnimation();
 
 			var currentOnFloor = IsOnFloor();
 
-			base.MoveAndSlide();
+			MoveAndSlide();
 
 			if (currentOnFloor && !IsOnFloor())
 			{
@@ -44,34 +37,20 @@ namespace SimpleCharacterDemo
 			}
 		}
 
-		private void UpdateDirection(Vector2 velocity)
-		{
-			if (velocity.X == 0)
-			{
-				return;
-			}
-
-			_isMovingRight = velocity.X > 0;
-			_grabHandRayCast.RotationDegrees = _isMovingRight ? 270 : 90;
-			_grabHandRayCast.ForceRaycastUpdate();
-			_ledgeGrabRayCast.RotationDegrees = _isMovingRight ? 270 : 90;
-			_ledgeGrabRayCast.ForceRaycastUpdate();
-		}
-
 		private Vector2 GetUpdatedVelocity(double delta)
 		{
 			Vector2 velocity = Velocity;
 			_grapple.HandleGrapple(ref velocity);
-			CheckLedgeGrab(ref velocity);
+			_ledgeGrab.Check(ref velocity);
 
 			if (_grapple.IsGrappleOnCooldown)
 			{
 				return velocity;
 			}
 
-			if (_isGrabbingLedge)
+			if (_ledgeGrab.IsGrabbing)
 			{
-				HandleLedgeGrab(ref velocity);
+				_ledgeGrab.Handle(ref velocity);
 			}
 			else
 			{
@@ -122,9 +101,7 @@ namespace SimpleCharacterDemo
 			{
 				if (Input.IsActionPressed(PlayerActionNames.Down) && IsOnFloor())
 				{
-					var p = Position;
-					p.Y += 1;
-					Position = p;
+					PlayerMovementHelper.MoveDownOnePixel(this);
 					return;
 				}
 
@@ -151,40 +128,13 @@ namespace SimpleCharacterDemo
 		{
 			var friction = IsOnFloor() ? MovementData.Friction : MovementData.AirResistance;
 			velocity.X = Mathf.MoveToward(velocity.X, 0, friction);
-		}
-
-		private void HandleLedgeGrab(ref Vector2 velocity)
-		{
-			if (Input.IsActionJustPressed(PlayerActionNames.Jump))
-			{
-				velocity.Y = MovementData.JumpVelocity;
-				velocity.X = GetWallNormal().X * MovementData.WallJumpPower;
-				_isGrabbingLedge = false;
-			}
-		}
-
-		private void CheckLedgeGrab(ref Vector2 velocity)
-		{
-			var isFalling = velocity.Y > 0;
-			var grabAvailable = _ledgeGrabRayCast.IsColliding() && !_grabHandRayCast.IsColliding();
-			var canGrab = isFalling && grabAvailable && !_isGrabbingLedge && IsOnWallOnly();
-
-			if (canGrab)
-			{
-				_isGrabbingLedge = true;
-				velocity = Vector2.Zero;
-			}
-			else if(_isGrabbingLedge && !IsOnWall())
-			{
-				_isGrabbingLedge = false;
-			}
-		}
+		}		
 
 		private void SetAnimation()
 		{
 			AnimatedSprite2D animatedSprite = GetNode<AnimatedSprite2D>(PlayerNodeNames.AnimatedSprite);
 
-			if (_isGrabbingLedge || IsOnWallOnly())
+			if (_ledgeGrab.IsGrabbing || IsOnWallOnly())
 			{
 				animatedSprite.Play(PlayerAnimationNames.Grab);
 				animatedSprite.FlipH = GetWallNormal().X < 0;
