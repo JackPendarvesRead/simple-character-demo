@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dwnewqevujf27"]
 
-[ext_resource type="Script" uid="uid://ffn0r5w3hscc" path="res://Abilities/LedgeGrab.cs" id="1_gttm8"]
+[ext_resource type="Script" uid="uid://ffn0r5w3hscc" path="res://Scripts/Abilities/LedgeGrab.cs" id="1_gttm8"]
 
 [node name="LedgeGrab" type="Node2D" unique_id=1980809726]
 script = ExtResource("1_gttm8")

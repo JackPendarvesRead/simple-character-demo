@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://drqbb5i77yvvn"]
 
-[ext_resource type="Script" uid="uid://yybg436y58v7" path="res://Abilities/Grapple.cs" id="1_cofiy"]
+[ext_resource type="Script" uid="uid://yybg436y58v7" path="res://Scripts/Abilities/Grapple.cs" id="1_cofiy"]
 
 [node name="Grapple" type="Node2D" unique_id=889256872]
 script = ExtResource("1_cofiy")
