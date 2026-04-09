@@ -1,7 +1,7 @@
 using Godot;
 using SimpleCharacterDemo.Abilities;
-using SimpleCharacterDemo.Constants;
-using SimpleCharacterDemo.Helpers;
+using SimpleCharacterDemo.Scripts.Constants;
+using SimpleCharacterDemo.Scripts.Helpers;
 
 namespace SimpleCharacterDemo
 {
@@ -128,7 +128,7 @@ namespace SimpleCharacterDemo
 		{
 			var friction = IsOnFloor() ? MovementData.Friction : MovementData.AirResistance;
 			velocity.X = Mathf.MoveToward(velocity.X, 0, friction);
-		}		
+		}
 
 		private void SetAnimation()
 		{

@@ -1,4 +1,4 @@
-namespace SimpleCharacterDemo.Constants
+namespace SimpleCharacterDemo.Scripts.Constants
 {
     public static class PlayerActionNames
     {

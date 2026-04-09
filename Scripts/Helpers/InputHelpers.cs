@@ -1,7 +1,7 @@
 using Godot;
-using SimpleCharacterDemo.Constants;
+using SimpleCharacterDemo.Scripts.Constants;
 
-namespace SimpleCharacterDemo
+namespace SimpleCharacterDemo.Scripts.Helpers
 {
     internal static class InputHelpers
     {

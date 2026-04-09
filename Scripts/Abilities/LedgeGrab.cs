@@ -1,11 +1,6 @@
 using Godot;
-using SimpleCharacterDemo.Constants;
-using SimpleCharacterDemo.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SimpleCharacterDemo.Scripts.Constants;
+using SimpleCharacterDemo.Scripts.Helpers;
 
 namespace SimpleCharacterDemo.Abilities
 {

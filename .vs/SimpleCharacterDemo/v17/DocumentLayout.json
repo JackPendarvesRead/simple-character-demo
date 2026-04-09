@@ -3,44 +3,52 @@
   "WorkspaceRootPath": "D:\\Godot\\Projects\\simple-character-demo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\abilities\\ledgegrab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:abilities\\ledgegrab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\constants\\ledgegrabnodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:constants\\ledgegrabnodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\helpers\\playermovementhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\helpers\\playermovementhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\abilities\\grapple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:abilities\\grapple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\.editorconfig||{68B46364-D378-42F2-9E72-37D86C5F4468}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:.editorconfig||{68B46364-D378-42F2-9E72-37D86C5F4468}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\constants\\playernodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\constants\\playernodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\constants\\playernodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:constants\\playernodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\constants\\playeranimationnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\constants\\playeranimationnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\constants\\grapplenodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:constants\\grapplenodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\constants\\playeractionnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\constants\\playeractionnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\constants\\playeranimationnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:constants\\playeranimationnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\constants\\ledgegrabnodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\constants\\ledgegrabnodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\constants\\playeractionnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:constants\\playeractionnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\constants\\grapplenodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\constants\\grapplenodenames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\inputhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:inputhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\helpers\\inputhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\helpers\\inputhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\playermovementdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:playermovementdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\resources\\playermovementdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\resources\\playermovementdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\abilities\\ledgegrab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\abilities\\ledgegrab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|d:\\godot\\projects\\simple-character-demo\\scripts\\abilities\\grapple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463D11C6-7EEC-49E4-83AB-E4EA5A037DD8}|SimpleCharacterDemo.csproj|solutionrelative:scripts\\abilities\\grapple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,42 +58,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".editorconfig",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\.editorconfig",
+              "RelativeDocumentMoniker": ".editorconfig",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\.editorconfig*",
+              "RelativeToolTip": ".editorconfig*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-09T01:46:24.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PlayerMovementHelper.cs",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Helpers\\PlayerMovementHelper.cs",
+              "RelativeDocumentMoniker": "Scripts\\Helpers\\PlayerMovementHelper.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Helpers\\PlayerMovementHelper.cs*",
+              "RelativeToolTip": "Scripts\\Helpers\\PlayerMovementHelper.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T01:35:24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LedgeGrabNodeNames.cs",
-              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\LedgeGrabNodeNames.cs",
-              "RelativeDocumentMoniker": "Constants\\LedgeGrabNodeNames.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\LedgeGrabNodeNames.cs",
-              "RelativeToolTip": "Constants\\LedgeGrabNodeNames.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Constants\\LedgeGrabNodeNames.cs",
+              "RelativeDocumentMoniker": "Scripts\\Constants\\LedgeGrabNodeNames.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Constants\\LedgeGrabNodeNames.cs*",
+              "RelativeToolTip": "Scripts\\Constants\\LedgeGrabNodeNames.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T23:57:39.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "LedgeGrab.cs",
-              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Abilities\\LedgeGrab.cs",
-              "RelativeDocumentMoniker": "Abilities\\LedgeGrab.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Abilities\\LedgeGrab.cs",
-              "RelativeToolTip": "Abilities\\LedgeGrab.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAcwCwAAAALAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Abilities\\LedgeGrab.cs",
+              "RelativeDocumentMoniker": "Scripts\\Abilities\\LedgeGrab.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Abilities\\LedgeGrab.cs*",
+              "RelativeToolTip": "Scripts\\Abilities\\LedgeGrab.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T23:54:10.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "PlayerAnimationNames.cs",
-              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\PlayerAnimationNames.cs",
-              "RelativeDocumentMoniker": "Constants\\PlayerAnimationNames.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\PlayerAnimationNames.cs",
-              "RelativeToolTip": "Constants\\PlayerAnimationNames.cs",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Constants\\PlayerAnimationNames.cs",
+              "RelativeDocumentMoniker": "Scripts\\Constants\\PlayerAnimationNames.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Constants\\PlayerAnimationNames.cs*",
+              "RelativeToolTip": "Scripts\\Constants\\PlayerAnimationNames.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T23:36:37.474Z",
@@ -93,13 +126,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "GrappleNodeNames.cs",
-              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\GrappleNodeNames.cs",
-              "RelativeDocumentMoniker": "Constants\\GrappleNodeNames.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\GrappleNodeNames.cs",
-              "RelativeToolTip": "Constants\\GrappleNodeNames.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Constants\\GrappleNodeNames.cs",
+              "RelativeDocumentMoniker": "Scripts\\Constants\\GrappleNodeNames.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Constants\\GrappleNodeNames.cs*",
+              "RelativeToolTip": "Scripts\\Constants\\GrappleNodeNames.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T23:34:43.259Z",
               "EditorCaption": ""
@@ -108,10 +141,10 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "InputHelpers.cs",
-              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\InputHelpers.cs",
-              "RelativeDocumentMoniker": "InputHelpers.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\InputHelpers.cs",
-              "RelativeToolTip": "InputHelpers.cs",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Helpers\\InputHelpers.cs",
+              "RelativeDocumentMoniker": "Scripts\\Helpers\\InputHelpers.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Helpers\\InputHelpers.cs*",
+              "RelativeToolTip": "Scripts\\Helpers\\InputHelpers.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T23:29:35.036Z",
@@ -119,25 +152,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Grapple.cs",
-              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Abilities\\Grapple.cs",
-              "RelativeDocumentMoniker": "Abilities\\Grapple.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Abilities\\Grapple.cs",
-              "RelativeToolTip": "Abilities\\Grapple.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAowCAAAAADAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Abilities\\Grapple.cs",
+              "RelativeDocumentMoniker": "Scripts\\Abilities\\Grapple.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Abilities\\Grapple.cs*",
+              "RelativeToolTip": "Scripts\\Abilities\\Grapple.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwCEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T23:24:58.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "PlayerNodeNames.cs",
-              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\PlayerNodeNames.cs",
-              "RelativeDocumentMoniker": "Constants\\PlayerNodeNames.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\PlayerNodeNames.cs",
-              "RelativeToolTip": "Constants\\PlayerNodeNames.cs",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Constants\\PlayerNodeNames.cs",
+              "RelativeDocumentMoniker": "Scripts\\Constants\\PlayerNodeNames.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Constants\\PlayerNodeNames.cs*",
+              "RelativeToolTip": "Scripts\\Constants\\PlayerNodeNames.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T21:31:42.618Z",
@@ -145,12 +178,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "PlayerActionNames.cs",
-              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\PlayerActionNames.cs",
-              "RelativeDocumentMoniker": "Constants\\PlayerActionNames.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Constants\\PlayerActionNames.cs",
-              "RelativeToolTip": "Constants\\PlayerActionNames.cs",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Constants\\PlayerActionNames.cs",
+              "RelativeDocumentMoniker": "Scripts\\Constants\\PlayerActionNames.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Constants\\PlayerActionNames.cs*",
+              "RelativeToolTip": "Scripts\\Constants\\PlayerActionNames.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T21:24:45.219Z",
@@ -158,13 +191,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
-              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Player.cs",
-              "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Player.cs",
-              "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAYwIwAAAAxAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Scripts\\Player.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Player.cs",
+              "RelativeToolTip": "Scripts\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T20:42:00.325Z",
               "EditorCaption": ""
@@ -173,11 +206,11 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "PlayerMovementData.cs",
-              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\PlayerMovementData.cs",
-              "RelativeDocumentMoniker": "PlayerMovementData.cs",
-              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\PlayerMovementData.cs",
-              "RelativeToolTip": "PlayerMovementData.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowC4AAAAkAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Resources\\PlayerMovementData.cs",
+              "RelativeDocumentMoniker": "Scripts\\Resources\\PlayerMovementData.cs",
+              "ToolTip": "D:\\Godot\\Projects\\simple-character-demo\\Scripts\\Resources\\PlayerMovementData.cs",
+              "RelativeToolTip": "Scripts\\Resources\\PlayerMovementData.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T20:41:23.625Z",
               "EditorCaption": ""
