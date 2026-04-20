@@ -52,6 +52,7 @@ namespace SimpleCharacterDemo.Abilities
 			{
 				// If the player is no longer on the wall release the grabbing state.
 				IsGrabbing = false;
+				GD.Print("Player ios grabbing whilst not on wall.  Setting IsGrabbing=FALSE");
 				return;
 			}
 
@@ -73,18 +74,22 @@ namespace SimpleCharacterDemo.Abilities
 			else if (grabLeft)
 			{
 				collisionPoint = _grabLeftRayCast.GetCollisionPoint();
+				GD.Print($"Grab left triggered at [{collisionPoint.X},{collisionPoint.Y}]");
 			}
 			else if (grabRight)
 			{
 				collisionPoint = _grabRightRayCast.GetCollisionPoint();
+				GD.Print($"Grab right triggered at [{collisionPoint.X},{collisionPoint.Y}]");
 			}
 
 			if (IsPlayerInGrabDistance(collisionPoint))
 			{
 				_grabInProgress = true;
 				IsGrabbing = true;
-				velocity.Y = 0;
-				velocity.X = Mathf.MoveToward(_player.Position.X, collisionPoint.X, 1200);
+				var directionToLedge = collisionPoint.X - _player.Position.X > 0 ? 1 : -1;
+                velocity.Y = 0;
+				velocity.X = directionToLedge * 200;
+				GD.Print($"Starting grab process. Velocity = {velocity.X}. CALC FROM Player={_player.Position.X}, Collision={collisionPoint.X}");
 			}
 		}
 
