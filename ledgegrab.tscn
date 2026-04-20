@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dwnewqevujf27"]
+
+[ext_resource type="Script" uid="uid://ffn0r5w3hscc" path="res://Scripts/Abilities/LedgeGrab.cs" id="1_gttm8"]
+
+[node name="LedgeGrab" type="Node2D" unique_id=1980809726]
+script = ExtResource("1_gttm8")
+
+[node name="GrabLeftRayCast" type="RayCast2D" parent="." unique_id=1845765463]
+position = Vector2(0, -2.65)
+rotation = 1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="GrabRightRayCast" type="RayCast2D" parent="." unique_id=783074991]
+position = Vector2(0, -2.65)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="CheckClearLeftRayCast" type="RayCast2D" parent="." unique_id=1301290104]
+position = Vector2(0, -4.755)
+rotation = 1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="CheckClearRightRayCast" type="RayCast2D" parent="." unique_id=683483131]
+position = Vector2(0, -4.755)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
